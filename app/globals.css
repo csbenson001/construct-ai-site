@@ -694,6 +694,102 @@ body::after {
   color: var(--steel-400);
 }
 
+/* ===== FAQ ===== */
+.faq-section {
+  background: var(--steel-950);
+  border-top: 1px solid var(--steel-700);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.faq-item {
+  background: var(--steel-800);
+  border: 1px solid var(--steel-700);
+  padding: 0;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.faq-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--steel-600);
+  transition: background 0.3s ease;
+}
+
+.faq-item[open]::before,
+.faq-item:hover::before {
+  background: var(--amber-500);
+}
+
+.faq-item:hover {
+  border-color: var(--steel-600);
+}
+
+.faq-item[open] {
+  border-color: var(--steel-600);
+}
+
+.faq-question {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--steel-100);
+  padding: 1.5rem 2rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: '+';
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--steel-500);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.faq-item[open] .faq-question::after {
+  content: '\2212';
+  color: var(--amber-500);
+}
+
+.faq-item:hover .faq-question {
+  color: var(--amber-400);
+}
+
+.faq-answer {
+  padding: 0 2rem 1.5rem 1.5rem;
+}
+
+.faq-answer p {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--steel-400);
+  line-height: 1.8;
+}
+
 /* ===== CTA FOOTER ===== */
 .cta-section {
   background: var(--steel-950);
@@ -909,6 +1005,12 @@ body::after {
   .stat-item:nth-child(1),
   .stat-item:nth-child(2) {
     border-bottom: 1px solid var(--steel-700);
+  }
+}
+
+@media (max-width: 900px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
   }
 }
 

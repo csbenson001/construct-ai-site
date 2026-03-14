@@ -261,6 +261,137 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===================== FAQ ===================== */}
+      <section className="faq-section section" id="faq">
+        <div className="section-inner">
+          <p className="section-label reveal">Intel</p>
+          <h2 className="section-title reveal">Frequently Asked Questions</h2>
+
+          <div className="faq-grid">
+            <details className="faq-item reveal reveal-delay-1">
+              <summary className="faq-question">
+                What does Construct.ai do?
+              </summary>
+              <div className="faq-answer">
+                <p>
+                  Construct.ai is an AI development factory that builds
+                  enterprise-grade software using a hybrid team of AI agents and
+                  senior human architects. We specialize in custom AI agents,
+                  enterprise platforms, data pipelines, and AI-powered
+                  automation.
+                </p>
+              </div>
+            </details>
+
+            <details className="faq-item reveal reveal-delay-2">
+              <summary className="faq-question">
+                How fast can Construct.ai deliver an AI project?
+              </summary>
+              <div className="faq-answer">
+                <p>
+                  We deliver enterprise AI solutions in weeks, not months. A
+                  typical MVP can be delivered in 4&ndash;8 weeks, with full
+                  production systems in 8&ndash;16 weeks depending on
+                  complexity. Our AI agent armies working alongside human
+                  architects enable 10x faster delivery than traditional
+                  development.
+                </p>
+              </div>
+            </details>
+
+            <details className="faq-item reveal reveal-delay-3">
+              <summary className="faq-question">
+                What types of AI solutions does Construct.ai build?
+              </summary>
+              <div className="faq-answer">
+                <p>
+                  We build four main categories of solutions: Custom AI Agents
+                  for workflow automation and decision-making, Enterprise AI
+                  Platforms for millions of users, Data Pipelines for
+                  petabyte-scale analytics, and AI-Powered Automation for
+                  document processing, supply chain orchestration, and more.
+                </p>
+              </div>
+            </details>
+
+            <details className="faq-item reveal reveal-delay-4">
+              <summary className="faq-question">
+                How is Construct.ai different from other AI companies?
+              </summary>
+              <div className="faq-answer">
+                <p>
+                  Our unique model deploys armies of AI agents supervised by
+                  elite human architects. This hybrid approach delivers 10x the
+                  speed of traditional development without sacrificing quality.
+                  We are enterprise-focused with 50+ clients and $2B+ in
+                  transactions processed through our systems.
+                </p>
+              </div>
+            </details>
+
+            <details className="faq-item reveal reveal-delay-1">
+              <summary className="faq-question">
+                Does Construct.ai work with enterprise clients?
+              </summary>
+              <div className="faq-answer">
+                <p>
+                  Yes, we specialize in enterprise engagements. We have served
+                  50+ enterprise clients across financial services, healthcare,
+                  supply chain, manufacturing, and more. All our systems are
+                  built with enterprise-grade security, compliance, and
+                  scalability requirements.
+                </p>
+              </div>
+            </details>
+
+            <details className="faq-item reveal reveal-delay-2">
+              <summary className="faq-question">
+                What is Construct.ai&apos;s development process?
+              </summary>
+              <div className="faq-answer">
+                <p>
+                  We follow a four-phase methodology: Blueprint (discovery and
+                  architecture), Build (parallel AI and human development),
+                  Deploy (zero-downtime production launch), and Scale (ongoing
+                  optimization). This structured approach ensures predictable
+                  delivery and high quality.
+                </p>
+              </div>
+            </details>
+
+            <details className="faq-item reveal reveal-delay-3">
+              <summary className="faq-question">
+                How much does it cost to build an AI solution with
+                Construct.ai?
+              </summary>
+              <div className="faq-answer">
+                <p>
+                  Contact us for a custom quote tailored to your specific
+                  requirements. We offer both fixed-scope engagements and
+                  time-and-materials arrangements. Our AI-powered development
+                  approach often results in 40&ndash;60% cost savings compared
+                  to traditional development.
+                </p>
+              </div>
+            </details>
+
+            <details className="faq-item reveal reveal-delay-4">
+              <summary className="faq-question">
+                What industries does Construct.ai serve?
+              </summary>
+              <div className="faq-answer">
+                <p>
+                  We serve enterprise software, financial services, healthcare,
+                  supply chain, manufacturing, logistics, retail, energy, and
+                  government sectors. Our solutions are adaptable to any
+                  industry requiring enterprise-grade AI capabilities.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
       {/* ===================== CTA ===================== */}
       <section className="cta-section section" id="contact">
         <div className="cta-bg-grid" aria-hidden="true" />

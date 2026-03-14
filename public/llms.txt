@@ -1,0 +1,25 @@
+# Construct.ai
+
+> Enterprise-grade AI software development company building custom AI solutions with AI agent armies and elite human architects.
+
+## About
+Construct.ai is an AI development factory that builds enterprise-grade software using a hybrid team of AI agents and senior human architects. We deliver custom AI solutions in weeks, not months. Our approach combines the speed of AI-powered development with the quality assurance of experienced engineers.
+
+## Services
+- Custom AI Agents: Purpose-built autonomous agents for complex workflows, decision-making, and organizational deployment at scale
+- Enterprise AI Platforms: Full-stack platforms engineered for millions of users with AI-native architecture and real-time processing
+- Data Pipelines: Industrial-strength data infrastructure for ingestion, transformation, and ML-powered analytics at petabyte scale
+- AI-Powered Automation: End-to-end process automation from document processing to supply chain orchestration
+
+## Key Differentiators
+- AI agent armies work alongside elite human architects for 10x faster delivery
+- Enterprise-focused: 50+ enterprise clients, $2B+ in transactions processed
+- 99.9% uptime SLA on all deployed systems
+- Full lifecycle: Blueprint, Build, Deploy, Scale methodology
+
+## Industries Served
+Enterprise software, financial services, healthcare, supply chain, manufacturing, logistics
+
+## Contact
+- Website: https://construct-ai-site.vercel.app
+- Email: hello@construct.ai
