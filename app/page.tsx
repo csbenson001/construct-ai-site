@@ -1,4 +1,25 @@
+"use client";
+
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       {/* ======================== HERO ======================== */}
@@ -23,7 +44,7 @@ export default function Home() {
           </p>
 
           <div className="hero-cta-row">
-            <a href="#contact" className="btn-primary">
+            <a href="mailto:hello@construct.ai" className="btn-primary">
               Start Building
             </a>
             <a href="#process" className="btn-secondary">
@@ -36,12 +57,12 @@ export default function Home() {
       {/* =================== WHAT WE BUILD =================== */}
       <section className="build-section section" id="services">
         <div className="section-inner">
-          <p className="section-label">Services</p>
-          <h2 className="section-title">What We Build</h2>
+          <p className="section-label reveal">Services</p>
+          <h2 className="section-title reveal">What We Build</h2>
 
           <div className="build-grid">
             {/* Card 1 */}
-            <div className="build-card">
+            <div className="build-card reveal reveal-delay-1">
               <span className="build-card-number">01</span>
               <div className="build-card-icon" aria-hidden="true">
                 <svg
@@ -52,6 +73,7 @@ export default function Home() {
                   stroke="currentColor"
                   strokeWidth="1.5"
                   style={{ color: 'var(--amber-500)' }}
+                  aria-hidden="true"
                 >
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                 </svg>
@@ -65,7 +87,7 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="build-card">
+            <div className="build-card reveal reveal-delay-2">
               <span className="build-card-number">02</span>
               <div className="build-card-icon" aria-hidden="true">
                 <svg
@@ -76,6 +98,7 @@ export default function Home() {
                   stroke="currentColor"
                   strokeWidth="1.5"
                   style={{ color: 'var(--amber-500)' }}
+                  aria-hidden="true"
                 >
                   <rect x="2" y="3" width="20" height="14" rx="2" />
                   <path d="M8 21h8M12 17v4" />
@@ -90,7 +113,7 @@ export default function Home() {
             </div>
 
             {/* Card 3 */}
-            <div className="build-card">
+            <div className="build-card reveal reveal-delay-3">
               <span className="build-card-number">03</span>
               <div className="build-card-icon" aria-hidden="true">
                 <svg
@@ -101,6 +124,7 @@ export default function Home() {
                   stroke="currentColor"
                   strokeWidth="1.5"
                   style={{ color: 'var(--amber-500)' }}
+                  aria-hidden="true"
                 >
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                 </svg>
@@ -114,7 +138,7 @@ export default function Home() {
             </div>
 
             {/* Card 4 */}
-            <div className="build-card">
+            <div className="build-card reveal reveal-delay-4">
               <span className="build-card-number">04</span>
               <div className="build-card-icon" aria-hidden="true">
                 <svg
@@ -125,6 +149,7 @@ export default function Home() {
                   stroke="currentColor"
                   strokeWidth="1.5"
                   style={{ color: 'var(--amber-500)' }}
+                  aria-hidden="true"
                 >
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                 </svg>
@@ -143,14 +168,14 @@ export default function Home() {
       {/* ==================== PROCESS ==================== */}
       <section className="process-section section" id="process">
         <div className="section-inner">
-          <p className="section-label">Our Process</p>
-          <h2 className="section-title">
+          <p className="section-label reveal">Our Process</p>
+          <h2 className="section-title reveal">
             From Blueprint to Production
           </h2>
 
           <div className="process-timeline">
             {/* Step 1 */}
-            <div className="process-step">
+            <div className="process-step reveal reveal-delay-1">
               <span className="process-step-num">01</span>
               <div className="process-step-dot" />
               <h3 className="process-step-title">Blueprint</h3>
@@ -165,7 +190,7 @@ export default function Home() {
             </div>
 
             {/* Step 2 */}
-            <div className="process-step">
+            <div className="process-step reveal reveal-delay-2">
               <span className="process-step-num">02</span>
               <div className="process-step-dot" />
               <h3 className="process-step-title">Build</h3>
@@ -180,7 +205,7 @@ export default function Home() {
             </div>
 
             {/* Step 3 */}
-            <div className="process-step">
+            <div className="process-step reveal reveal-delay-3">
               <span className="process-step-num">03</span>
               <div className="process-step-dot" />
               <h3 className="process-step-title">Deploy</h3>
@@ -195,7 +220,7 @@ export default function Home() {
             </div>
 
             {/* Step 4 */}
-            <div className="process-step">
+            <div className="process-step reveal reveal-delay-4">
               <span className="process-step-num">04</span>
               <div className="process-step-dot" />
               <h3 className="process-step-title">Scale</h3>
@@ -212,23 +237,23 @@ export default function Home() {
       {/* ==================== STATS ==================== */}
       <section className="stats-section section" id="stats">
         <div className="section-inner">
-          <p className="section-label">Proof of Work</p>
-          <h2 className="section-title">Built to Perform</h2>
+          <p className="section-label reveal">Proof of Work</p>
+          <h2 className="section-title reveal">Built to Perform</h2>
 
           <div className="stats-grid" style={{ marginTop: '3rem' }}>
-            <div className="stat-item">
+            <div className="stat-item reveal reveal-delay-1">
               <div className="stat-value">10x</div>
               <div className="stat-label">Faster Delivery</div>
             </div>
-            <div className="stat-item">
+            <div className="stat-item reveal reveal-delay-2">
               <div className="stat-value">50+</div>
               <div className="stat-label">Enterprise Clients</div>
             </div>
-            <div className="stat-item">
+            <div className="stat-item reveal reveal-delay-3">
               <div className="stat-value">99.9%</div>
               <div className="stat-label">Uptime SLA</div>
             </div>
-            <div className="stat-item">
+            <div className="stat-item reveal reveal-delay-4">
               <div className="stat-value">$2B+</div>
               <div className="stat-label">Transactions Processed</div>
             </div>
@@ -240,34 +265,25 @@ export default function Home() {
       <section className="cta-section section" id="contact">
         <div className="cta-bg-grid" aria-hidden="true" />
         <div className="cta-inner">
-          <p className="section-label" style={{ justifyContent: 'center' }}>
+          <p className="section-label reveal" style={{ justifyContent: 'center' }}>
             Get Started
           </p>
-          <h2 className="cta-headline">
+          <h2 className="cta-headline reveal">
             Ready to Construct
             <br />
             <span className="cta-headline-accent">
               Something Extraordinary?
             </span>
           </h2>
-          <p className="cta-sub">
+          <p className="cta-sub reveal">
             Tell us what you&apos;re building. Our team will architect a
             solution and deliver a detailed proposal within 48 hours.
           </p>
-          <form
-            className="cta-form"
-            action="#contact"
-          >
-            <input
-              type="email"
-              className="cta-input"
-              placeholder="your@email.com"
-              aria-label="Email address"
-            />
-            <button type="submit" className="cta-submit">
-              Let&apos;s Build
-            </button>
-          </form>
+          <div className="reveal" style={{ textAlign: 'center' }}>
+            <a href="mailto:hello@construct.ai" className="btn-primary">
+              Get In Touch
+            </a>
+          </div>
         </div>
       </section>
 
@@ -288,7 +304,7 @@ export default function Home() {
               <a href="#stats">Results</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="mailto:hello@construct.ai">Contact</a>
             </li>
           </ul>
           <span className="footer-copy">
