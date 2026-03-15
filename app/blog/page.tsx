@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     description:
       'Expert insights on AI development, enterprise software, and the future of AI-powered solutions.',
     type: 'website',
-    url: 'https://construct-ai-site.vercel.app/blog',
+    url: 'https://constructai.dev/blog',
     siteName: 'Construct.ai',
   },
   alternates: {
-    canonical: 'https://construct-ai-site.vercel.app/blog',
+    canonical: 'https://constructai.dev/blog',
   },
 };
 

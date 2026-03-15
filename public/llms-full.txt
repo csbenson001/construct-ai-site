@@ -125,5 +125,5 @@ Contact us for a custom quote tailored to your specific requirements. We offer b
 We serve enterprise software, financial services, healthcare, supply chain, manufacturing, logistics, retail, energy, and government sectors. Our solutions are adaptable to any industry requiring enterprise-grade AI capabilities.
 
 ## Contact
-- Website: https://construct-ai-site.vercel.app
+- Website: https://constructai.dev
 - Email: hello@construct.ai

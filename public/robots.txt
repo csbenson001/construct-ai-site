@@ -25,4 +25,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://construct-ai-site.vercel.app/sitemap.xml
+Sitemap: https://constructai.dev/sitemap.xml

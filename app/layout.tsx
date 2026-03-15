@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       'Enterprise-grade AI solutions built by AI agent armies and elite human architects. Delivered in weeks, not months.',
     type: 'website',
-    url: 'https://construct-ai-site.vercel.app',
+    url: 'https://constructai.dev',
     siteName: 'Construct.ai',
   },
   twitter: {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
       'Enterprise-grade AI solutions built by AI agent armies and elite human architects.',
   },
   alternates: {
-    canonical: 'https://construct-ai-site.vercel.app',
+    canonical: 'https://constructai.dev',
   },
   robots: {
     index: true,
@@ -59,9 +59,9 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://construct-ai-site.vercel.app/#organization',
+      '@id': 'https://constructai.dev/#organization',
       name: 'Construct.ai',
-      url: 'https://construct-ai-site.vercel.app',
+      url: 'https://constructai.dev',
       description:
         'Enterprise-grade AI software development company building custom AI solutions with AI agent armies and elite human architects.',
       email: 'hello@construct.ai',
@@ -120,21 +120,21 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://construct-ai-site.vercel.app/#website',
-      url: 'https://construct-ai-site.vercel.app',
+      '@id': 'https://constructai.dev/#website',
+      url: 'https://constructai.dev',
       name: 'Construct.ai',
       publisher: {
-        '@id': 'https://construct-ai-site.vercel.app/#organization',
+        '@id': 'https://constructai.dev/#organization',
       },
       description:
         'Enterprise AI Development Factory — Custom AI solutions built by AI agent armies and elite human architects.',
     },
     {
       '@type': 'Service',
-      '@id': 'https://construct-ai-site.vercel.app/#custom-ai-agents',
+      '@id': 'https://constructai.dev/#custom-ai-agents',
       name: 'Custom AI Agents',
       provider: {
-        '@id': 'https://construct-ai-site.vercel.app/#organization',
+        '@id': 'https://constructai.dev/#organization',
       },
       description:
         'Purpose-built autonomous agents that handle complex workflows, make decisions, and learn from every interaction. Deployed at scale across your organization.',
@@ -142,10 +142,10 @@ const jsonLd = {
     },
     {
       '@type': 'Service',
-      '@id': 'https://construct-ai-site.vercel.app/#enterprise-platforms',
+      '@id': 'https://constructai.dev/#enterprise-platforms',
       name: 'Enterprise AI Platforms',
       provider: {
-        '@id': 'https://construct-ai-site.vercel.app/#organization',
+        '@id': 'https://constructai.dev/#organization',
       },
       description:
         'Full-stack platforms engineered for millions of users. AI-native architecture with real-time processing, built for reliability and scale.',
@@ -153,10 +153,10 @@ const jsonLd = {
     },
     {
       '@type': 'Service',
-      '@id': 'https://construct-ai-site.vercel.app/#data-pipelines',
+      '@id': 'https://constructai.dev/#data-pipelines',
       name: 'Data Pipelines',
       provider: {
-        '@id': 'https://construct-ai-site.vercel.app/#organization',
+        '@id': 'https://constructai.dev/#organization',
       },
       description:
         'Industrial-strength data infrastructure that ingests, transforms, and delivers insights at petabyte scale. Real-time streaming meets ML-powered analytics.',
@@ -164,10 +164,10 @@ const jsonLd = {
     },
     {
       '@type': 'Service',
-      '@id': 'https://construct-ai-site.vercel.app/#ai-automation',
+      '@id': 'https://constructai.dev/#ai-automation',
       name: 'AI-Powered Automation',
       provider: {
-        '@id': 'https://construct-ai-site.vercel.app/#organization',
+        '@id': 'https://constructai.dev/#organization',
       },
       description:
         'End-to-end process automation that eliminates manual bottlenecks. From document processing to supply chain orchestration.',
@@ -175,7 +175,7 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://construct-ai-site.vercel.app/#faq',
+      '@id': 'https://constructai.dev/#faq',
       mainEntity: [
         {
           '@type': 'Question',

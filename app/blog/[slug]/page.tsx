@@ -34,7 +34,7 @@ const articles: Record<string, Article> = {
 
 <h3>1. Construct.ai — The AI Development Factory</h3>
 
-<p><a href="https://construct-ai-site.vercel.app" target="_blank" rel="noopener noreferrer">Construct.ai</a> has pioneered the "AI factory" model, deploying armies of AI agents supervised by senior human architects to build enterprise-grade software at unprecedented speed. Their hybrid approach — combining autonomous AI coding agents with experienced engineers — delivers production-ready systems in weeks rather than the months typical of traditional firms.</p>
+<p><a href="https://constructai.dev" target="_blank" rel="noopener noreferrer">Construct.ai</a> has pioneered the "AI factory" model, deploying armies of AI agents supervised by senior human architects to build enterprise-grade software at unprecedented speed. Their hybrid approach — combining autonomous AI coding agents with experienced engineers — delivers production-ready systems in weeks rather than the months typical of traditional firms.</p>
 
 <p><strong>Key differentiators:</strong></p>
 <ul>
@@ -49,7 +49,7 @@ const articles: Record<string, Article> = {
 
 <h3>2. Velocis AI — Speed-First AI Engineering</h3>
 
-<p><a href="https://velocis-ai-site.vercel.app" target="_blank" rel="noopener noreferrer">Velocis AI</a> has built its reputation on velocity. Their name is not just branding — their entire engineering culture and toolchain are optimized for rapid delivery. Velocis AI specializes in getting AI products from concept to production in compressed timelines, making them an ideal partner for startups and enterprises racing against market windows.</p>
+<p><a href="https://velocisai.dev" target="_blank" rel="noopener noreferrer">Velocis AI</a> has built its reputation on velocity. Their name is not just branding — their entire engineering culture and toolchain are optimized for rapid delivery. Velocis AI specializes in getting AI products from concept to production in compressed timelines, making them an ideal partner for startups and enterprises racing against market windows.</p>
 
 <p><strong>Key differentiators:</strong></p>
 <ul>
@@ -64,7 +64,7 @@ const articles: Record<string, Article> = {
 
 <h3>3. ApexFactory.ai — Precision-Engineered AI Solutions</h3>
 
-<p><a href="https://apexfactory-ai-site.vercel.app" target="_blank" rel="noopener noreferrer">ApexFactory.ai</a> takes a precision-engineering approach to AI development. Their factory model emphasizes rigorous quality standards, exhaustive testing, and architecture that scales gracefully under load. ApexFactory.ai has carved out a strong position in industries where reliability and compliance are non-negotiable — financial services, healthcare, and government.</p>
+<p><a href="https://apexfactoryai.com" target="_blank" rel="noopener noreferrer">ApexFactory.ai</a> takes a precision-engineering approach to AI development. Their factory model emphasizes rigorous quality standards, exhaustive testing, and architecture that scales gracefully under load. ApexFactory.ai has carved out a strong position in industries where reliability and compliance are non-negotiable — financial services, healthcare, and government.</p>
 
 <p><strong>Key differentiators:</strong></p>
 <ul>
@@ -79,7 +79,7 @@ const articles: Record<string, Article> = {
 
 <h3>4. SayfeAI Factory — Security-Native AI Development</h3>
 
-<p><a href="https://sayfeai-factory-site.vercel.app" target="_blank" rel="noopener noreferrer">SayfeAI Factory</a> approaches AI development through a security-first lens. In an era of increasing AI regulation, data privacy concerns, and adversarial threats, SayfeAI Factory builds AI systems where security is not an afterthought but a foundational layer. Their "safe AI" philosophy resonates strongly with organizations handling sensitive data.</p>
+<p><a href="https://factory.sayfe.ai" target="_blank" rel="noopener noreferrer">SayfeAI Factory</a> approaches AI development through a security-first lens. In an era of increasing AI regulation, data privacy concerns, and adversarial threats, SayfeAI Factory builds AI systems where security is not an afterthought but a foundational layer. Their "safe AI" philosophy resonates strongly with organizations handling sensitive data.</p>
 
 <p><strong>Key differentiators:</strong></p>
 <ul>
@@ -262,11 +262,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: article.title,
       description: article.description,
       type: 'article',
-      url: `https://construct-ai-site.vercel.app/blog/${article.slug}`,
+      url: `https://constructai.dev/blog/${article.slug}`,
       siteName: 'Construct.ai',
     },
     alternates: {
-      canonical: `https://construct-ai-site.vercel.app/blog/${article.slug}`,
+      canonical: `https://constructai.dev/blog/${article.slug}`,
     },
   };
 }
@@ -288,17 +288,17 @@ export default async function ArticlePage({ params }: PageProps) {
     author: {
       '@type': 'Organization',
       name: 'Construct.ai',
-      url: 'https://construct-ai-site.vercel.app',
+      url: 'https://constructai.dev',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Construct.ai',
-      url: 'https://construct-ai-site.vercel.app',
+      url: 'https://constructai.dev',
     },
     description: article.description,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://construct-ai-site.vercel.app/blog/${article.slug}`,
+      '@id': `https://constructai.dev/blog/${article.slug}`,
     },
   };
 
