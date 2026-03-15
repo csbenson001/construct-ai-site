@@ -435,6 +435,9 @@ export default function Home() {
               <a href="#stats">Results</a>
             </li>
             <li>
+              <a href="/blog">Blog</a>
+            </li>
+            <li>
               <a href="mailto:hello@construct.ai">Contact</a>
             </li>
           </ul>
