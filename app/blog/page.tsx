@@ -43,6 +43,22 @@ const articles = [
     date: 'February 2026',
     tag: 'Process',
   },
+  {
+    slug: 'ai-development-cost-guide-2026',
+    title: 'AI Development Cost Guide 2026: How Much Does Custom AI Really Cost?',
+    summary:
+      'A detailed breakdown of AI development costs in 2026, covering typical price ranges, factors that affect pricing, and ROI calculations.',
+    date: 'March 2026',
+    tag: 'Guide',
+  },
+  {
+    slug: 'custom-ai-agents-vs-chatgpt-wrappers',
+    title: 'Custom AI Agents vs ChatGPT Wrappers: What Enterprises Actually Need',
+    summary:
+      'A technical comparison of custom-built AI agents versus off-the-shelf ChatGPT wrapper products, with guidance on when each approach makes sense.',
+    date: 'March 2026',
+    tag: 'Technology',
+  },
 ];
 
 export default function BlogPage() {
